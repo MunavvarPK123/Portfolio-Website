@@ -1,0 +1,212 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5abbb664ba.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+
+      <!----------header--------->
+      <div id="header">
+         <div class="container">
+            <nav>
+               <img src="Photos/logo.png" class="logo">
+               <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#cirtifications">Cirtifications</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fas fa-times" onclick="closemenu()"></i>
+               </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+               <p>Software Developer</p>
+               <h1>Hi, I'm <span>Munavvar P K </span> <br>from Malappuram, Kerala</h1>
+            </div>
+         </div>
+      </div>
+
+      <!--------------about---------->
+      <div id="about">
+          <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <p style="text-align: justify;">I am <b>Munavvar P K</b>, a passionate and results-driven <b>Computer Science Engineer</b> with strong skills in Java, Python, C, JavaScript, and SQL. I enjoy building impactful software solutions ranging from full-stack applications to AI-driven research projects.
+               My experience includes developing a real-time chat application using the <b>MERN stack</b>, creating a <b>Flutter-based</b> plant disease detection app, and working on an innovative cyberattack detection system in social media using <b>Spiking Neural Networks</b>.
+               I also completed a <b>Cybersecurity Internship</b> during my academics, where I gained hands-on exposure to modern security tools and practices. Beyond technical skills, I am strong in problem-solving, teamwork, adaptability, and time management. 
+               My goal is to continuously learn and contribute as a Software Developer, building intelligent, secure, and scalable applications that solve real-world problems.</p>
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('Education')">Education</p>
+                  <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+               </div>
+               <div class="tab-contents-wrapper">
+                  <div class="tab-contents active-tab" id="Skills">
+                     <ul>
+                        <li><span>Programming Languages</span><br>Python, Java, C, JavaScript</li>
+                        <li><span>Web Technologies</span><br>HTML, CSS, React.js, Node.js, Express.js</li>
+                        <li><span>Databases</span><br>SQL, MongoDB</li>
+                        <li><span>Core CS Fundamentals</span><br>DSA, OS, DBMS, Cn, Boolean Algebra, SDLC</li>
+                        <li><span>Soft Skills</span><br>Problem Solving, Teamwork, Adaptability, Time Management</li>
+                     </ul>
+                  </div>
+
+                  <div class="tab-contents" id="Education">
+                     <ul>
+                        <li><span>Bachelor of Technology</span><br>2021-25 : TKM College of Engineering, Kollam, Kerala</li>
+                        <li><span>Plus Two</span><br>2020 : GHSS Othukkungal, Kerala</li>
+                        <li><span>SSLC</span><br>2018 : IUHSS Parappur, Kerala</li>
+                     </ul>
+                  </div>
+
+                  <div class="tab-contents" id="Experience">
+                     <ul>
+                        <li><span>Cybersecurity Intern</span><br> Senselearner technologies Pvt Ltd<br> Sep 2023 - Oct 2023 
+                        <a href="https://drive.google.com/file/d/1aDeLGxOZ7Cuh_42_Nv0daGDlGgw7uW6d/view?usp=drive_link" target="_blank">View Certificate</a></li>
+                     </ul>
+                  </div>
+               </div>
+          </div>
+      </div>
+
+      <!--------------projects---------->
+      <div id="projects">
+         <div class="container">
+            <h1 class="sub-title"> My Works</h1>
+            <div class="project-list">
+               <div class="work">
+                  <img src="Photos/cyber.png">
+                  <div class="layer">
+                     <h3><b>Threat Detection</b></h3>
+                     <p> Spiking Neural Network model to detect cyber threats from tweets, utilizing Natural Language Processing and multimodal features.<br>
+                     Preprocessed tweets with structural, textual, and URL-based features, trained using surrogate gradient descent and LIF neurons  </p>
+                  </div>
+               </div>
+                <div class="work">
+                  <img src="Photos/plant disease.jpeg">
+                  <div class="layer">
+                     <h3><b>Dr.Green</b></h3>
+                     <p>A cross-platform mobile application using Flutter for detecting plant diseases via image analysis. <br>
+                     Trained a convolutional neural network on the PlantVillage dataset, achieving approximately 92% accuracy.</p>
+                  </div>
+               </div>
+               <div class="work">
+                  <img src="Photos/chatt.png">
+                  <div class="layer">
+                     <h3><b>Chatty</b></h3>
+                     <p> A full-stack, real-time chat application using the MERN stack developed by real-time bidirectional communication using Socket.io.<br> 
+                  Designed and managed a NoSQL database with MongoDB to store user profiles, chat history, and group information. </p>
+                     <!--<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>-->
+                  </div>
+               </div>
+            </div>
+            <!--<a href="#" class="btn">See more</a>---(adding for new)-->
+         </div>
+      </div>
+
+      <!--------------cirtificationss---------->
+      
+      <div id="cirtifications">
+         <div class="container">
+            <h1 class="sub-title">Cirtifications</h1>
+            <div class="cert-list">
+               <div>
+                  <i class="fa-solid fa-certificate"></i>
+                  <h2>NPTEL</h2>
+                  <p>Programming, Data Structures and Algorithms using Python</p>
+                  <a href="https://drive.google.com/file/d/18hhdfp5R0rpRcy6D-23M1VA5Dx7sMwoI/view?usp=drive_link" target="_blank">View Cirtificate</a>
+               </div>
+               <div>
+                  <i class="fa-solid fa-certificate"></i>
+                  <h2>Udemy</h2>
+                  <p>The Complete Python Programmer: From Scratch to ApplicationsPython</p>
+                  <a href="https://drive.google.com/file/d/1lJ5X2Snu5rMO7M9ODW5ullg7MHfLuSnK/view?usp=drive_link" target="_blank">View Cirtificate</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!--------------contacts---------->
+
+      <div id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-envelope"></i>munavvarmunna780@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>9562564078</p>
+                  <div class="social-icons">
+                     <a href="https://www.linkedin.com/in/munavvar-p-k-496371248/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://github.com/MunavvarPK123" target="_blank"><i class="fa-brands fa-github"></i></a>
+                     <a href="https://medium.com/@MunavvarPK" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                     <a href="https://www.instagram.com/munavvarmunna_1/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                     <a href="https://www.facebook.com/munavvar.munna.946" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                  <a href="" download class="btn btn1">Download Resume</a>
+               </div>
+               <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email" name="Email" placeholder="Your Email" required>
+                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn1">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script>
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+
+         function opentab(tabname){
+            for(tablink of tablinks){
+               tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }  
+
+      </script>
+
+      <script>
+         var sidemenu = document.getElementById("sidemenu");
+
+         function openmenu(){
+            sidemenu.style.right = "0"; 
+         }
+
+         function closemenu(){
+            sidemenu.style.right = "-200px"
+         }
+      </script>
+
+      <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbxw0TzTwkmWav7lnEmYTe9FukZU8JobxWUv7v4IV_OviBs45MWS-Es8d-CuT0PWWSUtqg/exec'
+         const form = document.forms['submit-to-google-sheet']
+         const msg = document.getElementById("msg")
+
+         form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+               msg.innerHTML = "Message sent successfully!"
+               setTimeout(function(){
+                  msg.innerHTML = ""
+               },5000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+         })
+      </script>
+   </body>
+</html>
