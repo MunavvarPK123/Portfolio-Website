@@ -283,7 +283,7 @@ nav ul li a:hover::after{
 }
 
 .cert-list div a:hover{
-    color: #383434;
+    color: #000000;
 }
 
 .cert-list div:hover{
